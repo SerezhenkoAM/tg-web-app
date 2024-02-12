@@ -1,5 +1,5 @@
 import React from 'react'
-
+import styles from './Header.module.css'
 const Header = () => {
   const tg = window.Telegram.WebApp
 
@@ -8,9 +8,9 @@ const Header = () => {
   }
 
   return (
-    <div className='header'>
-      <button onClick={onClose}>Закрыть</button>
-      <span className='username'>Имя пользователя: {tg.initDataUnsafe?.user?.is_premium}</span>
+    <div className={styles.header}>
+      <div className={styles.username}>Активный пользователь: {tg.initDataUnsafe?.user?.username}</div>
+      <button onClick={onClose} className={styles.button}>Закрыть</button>
     </div>
   )
 }
