@@ -33,7 +33,7 @@ const Form = () => {
     } else {
       tg.MainButton.hide()
     }
-  },[])
+  })
   return (
     <div>
       Введите данные
