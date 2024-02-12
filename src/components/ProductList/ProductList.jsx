@@ -12,7 +12,7 @@ const ProductList = () => {
   const [addedItems,setAddedItems] = useState([])
   const tg = window.Telegram.WebApp
   const onAdd = (product) => {
-    setAddedItems(product.id)
+    setAddedItems(product)
     if (addedItems === 0) {
       tg.MainButton.hide()
     } else {
