@@ -24,14 +24,13 @@ const ProductList = () => {
   }
   return (
     <div>
-      ProductList
       {
-        products.map(item => {
+        products.map(item => (
           <ProductItem 
               product={item}
               onAdd={onAdd}
           />
-        })
+        ))
       }
     </div>
   )
