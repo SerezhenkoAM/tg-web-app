@@ -8,7 +8,7 @@ const ProductItem = ({product,onAdd}) => {
     <div>
       <div>{product.title}</div>
       <div>{product.price}</div>
-      <button onClick={addProduct()}>Добавить в корзину</button>
+      <button onClick={addProduct}>Добавить в корзину</button>
     </div>
   )
 }
