@@ -15,7 +15,7 @@ const Form = () => {
     })
   })
   useEffect(() => {
-    if(!name || !surname) {
+    if(name.length >= 1 || surname >= 1) {
       tg.MainButton.show()
     } else {
       tg.MainButton.hide()
