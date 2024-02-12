@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProductItem = (product,onAdd) => {
+const ProductItem = ({product,onAdd}) => {
   const addProduct = () => {
     onAdd(product)
   }
