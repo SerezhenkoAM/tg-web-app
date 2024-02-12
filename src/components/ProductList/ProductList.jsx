@@ -17,7 +17,7 @@ const ProductList = () => {
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
-      tg.MainButtons.setParams({
+      tg.MainButton.setParams({
         text: `Купить ${addedItems}`
       })
     }
