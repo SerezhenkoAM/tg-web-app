@@ -9,12 +9,15 @@ const Form = () => {
   const onChangeSurname = (e) => {
     setSurname(e.target.value)
   }
+  const showbtn = () => {
+    tg.MainButton.show()
+  }
   return (
     <div>
       Введите данные
       <input type="text" placeholder='Ваше имя' onChange={onChangeName} value={name}/>
       <input type="text" placeholder='Ваша Фамилия' onChange={onChangeSurname} value={surname}/>
-      {tg.MainButton.isVisibler}
+      <button onClick={showbtn}>Нажать</button>
     </div>
   )
 }
