@@ -26,7 +26,6 @@ const Form = () => {
       Введите данные
       <input type="text" placeholder='Ваше имя' onChange={onChangeName} value={name}/>
       <input type="text" placeholder='Ваша Фамилия' onChange={onChangeSurname} value={surname}/>
-      <button onClick={showbtn}>Нажать</button>
     </div>
   )
 }
