@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ProductItem from '../ProductItem/ProductItem'
+import styles from './ProductList.module.css'
 
 const ProductList = () => {
   const products = [
@@ -12,7 +13,6 @@ const ProductList = () => {
   const [addedItems,setAddedItems] = useState([])
   const tg = window.Telegram.WebApp
   const onAdd = (product) => {
-    console.log(product)
     setAddedItems(product)
     if (addedItems === 0) {
       tg.MainButton.hide()
@@ -25,14 +25,18 @@ const ProductList = () => {
   }
   return (
     <div>
+      <h1 className={styles.h1}>Список товаров</h1>
+      <div className={styles.list}>
+
       {
         products.map(item => (
           <ProductItem 
-              product={item}
-              onAdd={onAdd}
+          product={item}
+          onAdd={onAdd}
           />
-        ))
-      }
+          ))
+        }
+      </div>
     </div>
   )
 } 
