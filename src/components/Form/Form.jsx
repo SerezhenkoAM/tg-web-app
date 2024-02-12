@@ -20,13 +20,13 @@ const Form = () => {
       surname
     }
     tg.sendData(JSON.stringify(data))
-  }, [])
+  }, [name, surname])
   useEffect(() => {
     tg.WebApp.onEvent('mainButtonClicked', onSendData)
     return () => {
       tg.WebApp.offEvent('mainButtonClicked', onSendData)
     }
-  })
+  }, [onSendData])
   useEffect(() => {
     if(name.length >= 1 || surname >= 1) {
       tg.MainButton.show()
