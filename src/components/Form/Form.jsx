@@ -20,20 +20,20 @@ const Form = () => {
       surname
     }
     tg.sendData(JSON.stringify(data))
-  }, [name, surname])
+  }, [name, surname, tg])
   useEffect(() => {
     tg.WebApp.onEvent('mainButtonClicked', onSendData)
     return () => {
       tg.WebApp.offEvent('mainButtonClicked', onSendData)
     }
-  }, [onSendData])
+  }, [onSendData,tg.WebApp])
   useEffect(() => {
     if(name.length >= 1 || surname >= 1) {
       tg.MainButton.show()
     } else {
       tg.MainButton.hide()
     }
-  })
+  },[])
   return (
     <div>
       Введите данные
