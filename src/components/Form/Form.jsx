@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 const Form = () => {
   const tg = window.Telegram.WebApp
   const [name, setName] = useState('')
@@ -9,9 +9,18 @@ const Form = () => {
   const onChangeSurname = (e) => {
     setSurname(e.target.value)
   }
-  const showbtn = () => {
-    tg.MainButton.show()
-  }
+  useEffect(() => {
+    tg.MainButton.setParams({
+      text: 'Отправить данные'
+    })
+  })
+  useEffect(() => {
+    if(!name || !surname) {
+      tg.MainButton.show()
+    } else {
+      tg.MainButton.hide()
+    }
+  })
   return (
     <div>
       Введите данные
