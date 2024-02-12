@@ -26,7 +26,7 @@ const Form = () => {
     return () => {
       tg.WebApp.offEvent('mainButtonClicked', onSendData)
     }
-  }, [onSendData, tg])
+  }, [onSendData, tg.WebApp])
   useEffect(() => {
     if(name.length >= 1 || surname >= 1) {
       tg.MainButton.show()
