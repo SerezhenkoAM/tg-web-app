@@ -12,8 +12,8 @@ const Form = () => {
   return (
     <div>
       Введите данные
-      <input type="text"placeholder='Ваше имя' onChange={onChangeName}/>
-      <input type="text" placeholder='Ваша Фамилия' onChange={onChangeSurname}/>
+      <input type="text" placeholder='Ваше имя' onChange={onChangeName} value={name}/>
+      <input type="text" placeholder='Ваша Фамилия' onChange={onChangeSurname} value={surname}/>
       {tg.MainButton.isVisibler}
     </div>
   )
