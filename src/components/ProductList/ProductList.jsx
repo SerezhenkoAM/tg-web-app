@@ -11,7 +11,6 @@ const ProductList = () => {
     {id: 4,title: 'Рис', price: 1000}
   ]
   const [addedItems,setAddedItems] = useState([])
-  const [all_price, setAllPrice] = useState(0)
   const tg = window.Telegram.WebApp
 
   const getTotalPrice = (items) => {
@@ -33,7 +32,7 @@ const ProductList = () => {
         text: `Купить ${getTotalPrice(addedItems)}`
       })
     }
-  }, [addedItems])
+  }, [addedItems, tg.MainButton])
   return (
     <div>
       <h1 className={styles.h1}>Список товаров</h1>
