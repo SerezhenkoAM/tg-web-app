@@ -10,6 +10,7 @@ const ProductList = () => {
     {id: 3, title: 'Мясо', price: 3000},
     {id: 4,title: 'Рис', price: 1000}
   ]
+
   const [addedItems,setAddedItems] = useState([])
   const tg = window.Telegram.WebApp
 
@@ -29,15 +30,15 @@ const ProductList = () => {
     } else {
       tg.MainButton.show()
       tg.MainButton.setParams({
-        text: `Купить ${getTotalPrice(addedItems)}`
+        text: `Купить ${getTotalPrice(addedItems)}`,
       })
+      tg.WebApp.onClick('mainButtonClicked', console.log('click'))
     }
   }, [addedItems, tg.MainButton])
   return (
     <div>
       <h1 className={styles.h1}>Список товаров</h1>
       <div className={styles.list}>
-
       {
         products.map(item => (
           <ProductItem 
