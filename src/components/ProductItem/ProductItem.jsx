@@ -3,7 +3,7 @@ import styles from './ProductItem.module.css'
 
 const ProductItem = ({product,onAdd}) => {
   const addProduct = () => {
-    onAdd(product.title)
+    onAdd(product)
   }
   return (
     <div className={styles.wrapp}>
