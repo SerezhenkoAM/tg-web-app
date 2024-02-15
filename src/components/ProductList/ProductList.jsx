@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { useNavigate } from "react-router-dom";
 import ProductItem from '../ProductItem/ProductItem'
 import styles from './ProductList.module.css'
@@ -22,9 +22,9 @@ const ProductList = () => {
   }
 
   const navigate = useNavigate();
-  const redirect_confirmList = () => {
+  const redirect_confirmList = useCallback(() => {
     navigate("/confirm");
-  }
+  }, [navigate]);
 
   const onAdd = (product) => {
     setAddedItems([...addedItems, product])
