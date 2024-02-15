@@ -32,7 +32,6 @@ const ProductList = () => {
       tg.MainButton.setParams({
         text: `Купить ${getTotalPrice(addedItems)}`,
       })
-      tg.WebApp.onClick('mainButtonClicked', console.log('click'))
     }
   }, [addedItems, tg.MainButton])
   return (
