@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ProductItem from '../ProductItem/ProductItem'
 import styles from './ProductList.module.css'
 
@@ -21,8 +21,9 @@ const ProductList = () => {
     }, 0)
   }
 
+  const navigate = useNavigate();
   const redirect_confirmList = () => {
-    return redirect("/confirm");
+    navigate("/confirm");
   }
 
   const onAdd = (product) => {
@@ -53,6 +54,7 @@ const ProductList = () => {
           />
           ))
         }
+        <a onClick={redirect_confirmList}>Click me</a>
       </div>
     </div>
   )

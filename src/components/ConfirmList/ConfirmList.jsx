@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ConfirmList = ({data}) => {
+const ConfirmList = ({data = []}) => {
   return (
     <div className="">
       <h1>Выбранные товары</h1>
