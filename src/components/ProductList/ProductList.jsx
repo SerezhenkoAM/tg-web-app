@@ -20,6 +20,10 @@ const ProductList = () => {
     }, 0)
   }
 
+  const redirect_confirmList = () => {
+    return redirect("/confirm");
+  }
+
   const onAdd = (product) => {
     setAddedItems([...addedItems, product])
   }
@@ -32,6 +36,7 @@ const ProductList = () => {
       tg.MainButton.setParams({
         text: `Купить ${getTotalPrice(addedItems)}`,
       })
+      tg.WebApp.onEvent('mainButtonClicked', redirect_confirmList)
     }
   }, [addedItems, tg.MainButton])
   return (
