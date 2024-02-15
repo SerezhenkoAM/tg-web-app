@@ -39,7 +39,7 @@ const ProductList = () => {
       })
       tg.onEvent('mainButtonClicked', redirect_confirmList)
     }
-  }, [addedItems, tg.MainButton])
+  }, [addedItems, tg.MainButton, tg.onEvent])
   return (
     <div>
       <h1 className={styles.h1}>Список товаров</h1>
