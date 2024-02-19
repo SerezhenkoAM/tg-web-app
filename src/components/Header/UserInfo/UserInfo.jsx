@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './UserInfo.module.css'
 const UserInfo = () => {
   const tg = window.Telegram.WebApp
+  useEffect(() => {
+    console.log(tg.initDataUnsafe)
+  })
   return (
     <div className={styles.wrapp}>
       {tg.initDataUnsafe?.photo_url}
@@ -9,7 +12,6 @@ const UserInfo = () => {
         <div className="">
           <p>Добрый день,</p>
           <p>{tg.initDataUnsafe?.user?.first_name}</p>
-          <p>{tg.initDataUnsafe}</p>
         </div>
     </div>
   )
