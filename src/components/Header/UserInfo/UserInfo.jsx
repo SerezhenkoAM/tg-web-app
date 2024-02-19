@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './UserInfo.module.css'
 const UserInfo = () => {
   const tg = window.Telegram.WebApp
+  const png = tg.initDataUnsafe?.photo_url
+  useEffect(() => {
+    alert(png)
+  })
   return (
     <div className={styles.wrapp}>
         <img src={tg.initDataUnsafe?.photo_url} alt="Фотография" className={styles.photo_url}/>
