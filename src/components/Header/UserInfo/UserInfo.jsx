@@ -5,7 +5,7 @@ const UserInfo = () => {
   useEffect(() => {
     console.log(tg.initData)
     async function getUserInfo() {
-      const user = await telegram.getUserProfilePhotos({userId: '@username', offset: 0, limit: 1});
+      const user = await tg.getUserProfilePhotos({userId: tg.initDataUnsafe?.user?.id, offset: 0, limit: 1});
       const photo = user.photos[0][0].fileId;
       return photo;
     }
