@@ -9,6 +9,7 @@ const UserInfo = () => {
         <div className="">
           <p>Добрый день,</p>
           <p>{tg.initDataUnsafe?.user?.first_name}</p>
+          <p>{tg.initDataUnsafe}</p>
         </div>
     </div>
   )
