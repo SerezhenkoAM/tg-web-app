@@ -1,0 +1,69 @@
+.button_1, .button_2{
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.button_3 {
+  background-color: #0186C6;
+  border-radius: 20px;
+  border: 1px solid black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  padding: 1rem 1.2rem;
+  color: white; 
+}
+.button_3 > p {
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+}
+
+
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .7rem;
+}
+
+.arrow_2 {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+img {
+  width: 13px;
+  height: 13px;
+}
+
+.wrapp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 140px);
+  gap: 1.5rem;
+}
+
+.bold_text {
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.light_text {
+  font-size: 14px;
+  color: #8F8F8F;
+  padding: .7rem;
+}

@@ -1,0 +1,16 @@
+.button_4 {
+  background-color: #FFE700;
+  padding: 1.3rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.wrapp {
+  background-color: #F2FBFF;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}

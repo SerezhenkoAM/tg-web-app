@@ -1,0 +1,5 @@
+.wrapp {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0.5rem;
+}
