@@ -3,7 +3,7 @@ import styles from './UserInfo.module.css'
 const UserInfo = () => {
   const tg = window.Telegram.WebApp
   useEffect(() => {
-    console.log(tg.initDataUnsafe)
+    console.log(tg)
   })
   return (
     <div className={styles.wrapp}>
