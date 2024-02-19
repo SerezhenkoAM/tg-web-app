@@ -7,6 +7,7 @@ const UserInfo = () => {
     async function getUserInfo() {
       const user = await tg.getUserProfilePhotos({userId: tg.initDataUnsafe?.user?.id, offset: 0, limit: 1});
       const photo = user.photos[0][0].fileId;
+      console.log(user)
       return photo;
     }
     console.log(getUserInfo)
