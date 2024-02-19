@@ -1,0 +1,25 @@
+.wrapp {
+  border: 2px solid black;
+  display: flex;
+  padding: 0.4rem .8rem;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.logo {
+  width: 23px;
+  height: 23px;
+  margin-right: .5rem;
+}
+
+.text_1 {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.text_2 {
+  font-size: 8px;
+  text-align: center;
+
+}

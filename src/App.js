@@ -5,17 +5,15 @@ import ProductList from './components/ProductList/ProductList'
 import ConfirmList from './components/ConfirmList/ConfirmList';
 
 function App() {
-
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route  index element={<ProductList />} /> 
-        <Route  path="/confirm" element={<ConfirmList />} /> 
+        <Route  index element={<ProductList  products="products"/>} /> 
+        <Route  path="/confirm" element={<ConfirmList  addedItem="addedItem" />} /> 
       </Routes>
     </div>
   );
 }
 
 export default App;
-//<ProductList />

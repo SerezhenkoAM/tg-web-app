@@ -1,16 +1,16 @@
 import React from 'react'
 import styles from './Header.module.css'
+import TG_SRC from './tg_src/TG_SRC.jsx'
+import UserInfo from './UserInfo/UserInfo.jsx'
 const Header = () => {
-  const tg = window.Telegram.WebApp
-
-  const onClose = () => {
-    tg.close()
-  }
+  // const onClose = () => {
+  //   tg.close()
+  // }
 
   return (
     <div className={styles.header}>
-      <div className={styles.username}>Активный пользователь: {tg.initDataUnsafe?.user?.username}</div>
-      <button onClick={onClose} className={styles.button}>Закрыть</button>
+      <UserInfo />
+      <TG_SRC />
     </div>
   )
 }

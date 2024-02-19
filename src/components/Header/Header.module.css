@@ -3,19 +3,14 @@
   justify-content: space-around;
   align-items: center;
   margin: .5rem 0 0 .5rem;
+  border: 1px solid black;
+  border-radius: 0 0 10px 10px;
+  padding: 1rem;
 }
 
-.username {
-  padding: .2rem;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button {
-  margin: 0 0.5rem 0 0;
-  padding: .2rem;
-  background-color: white;
-  border: 1px solid black;
+.photo_url {
+  border-radius: 20px;
+  width: 43px;
+  height: 43px;
+  background-color: black;
 }

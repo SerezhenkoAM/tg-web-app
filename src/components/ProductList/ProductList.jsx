@@ -54,7 +54,6 @@ const ProductList = () => {
           />
           ))
         }
-        <div onClick={redirect_confirmList}>Click me</div>
       </div>
     </div>
   )
