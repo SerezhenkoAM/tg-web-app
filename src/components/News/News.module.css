@@ -1,5 +1,10 @@
 .wrapp {
   display: flex;
-  gap: 1rem;
-  margin: 2rem 0.5rem;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 0.5rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }

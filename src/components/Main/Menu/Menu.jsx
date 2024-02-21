@@ -10,6 +10,7 @@ const Menu = () => {
           <p className={styles.bold_text}>Зови друзей</p>
           <img src={arrow} alt="" />
         </div>
+        
         <p className={styles.light_text}>Дарим по 500 рублей каждому</p>
       </div>
       <div className={styles.button_3}>

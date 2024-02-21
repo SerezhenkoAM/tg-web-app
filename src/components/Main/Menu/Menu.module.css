@@ -2,7 +2,7 @@
   border-radius: 10px;
   border: 1px solid black;
   background-color: white;
-  padding: .5rem;
+  padding: 1rem .5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,8 +30,6 @@
   text-align: center;
 }
 
-
-
 .grid {
   display: flex;
   justify-content: space-between;
@@ -54,7 +52,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 140px);
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .bold_text {
