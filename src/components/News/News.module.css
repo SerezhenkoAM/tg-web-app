@@ -1,6 +1,5 @@
 .wrapp {
   display: flex;
-  justify-content: space-around;
   gap: 2rem;
   padding: 2rem 0.5rem;
   border-top: 1px solid black;
