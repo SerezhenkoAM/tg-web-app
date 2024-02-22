@@ -71,3 +71,9 @@ img {
   color: #8F8F8F;
   padding: .7rem;
 }
+
+@media screen and (max-width: 400px) {
+  .light_text {
+    font-size: 10px;
+  }
+}

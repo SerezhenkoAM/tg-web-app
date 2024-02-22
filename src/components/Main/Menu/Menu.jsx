@@ -22,7 +22,7 @@ const Menu = () => {
           <p className={styles.bold_text}>The Mobile Shop</p>
           <img src={arrow} alt="Перейти" />
         </div>
-        <p className={styles.light_text}>Узнай о нашей компании больше</p>
+        <p className={styles.light_text}>Узнать о компании больше</p>
       </NavLink>
     </div>
   )
