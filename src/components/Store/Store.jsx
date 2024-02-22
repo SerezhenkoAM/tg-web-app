@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Store.module.css'
 import ItemStore from './ItemStore/ItemStore'
-// import arrow from './img/arrow3.png'
+ import arrow from './img/icon_4.png'
 // import settings from './img/settings.png'
-// import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Store = () => {
   const data = [
@@ -17,10 +17,10 @@ const Store = () => {
   return (
     <>
     <div className={styles.wrapp}>
-      {/* <NavLink to="/">
-        <img src={arrow} alt="Назад" className={styles.img} />
-      </NavLink> */}
     <div className={styles.navbar}>
+      <NavLink to="/">
+        <img src={arrow} alt="Назад" className={styles.img} />
+      </NavLink>
       <input type="text" className={styles.input} placeholder='Найти товар'/>
     </div>
     <div className={styles.grid}>
