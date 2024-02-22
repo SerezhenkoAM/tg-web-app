@@ -17,12 +17,13 @@
   align-items: center;
   justify-content: center;
   gap: .5rem;
-  padding: 10px 10px;
+  padding: 10px 0;
+  font-size: 14px;
 }
 
 .img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto;
   display: block;
 }
@@ -32,7 +33,6 @@
   background-color: white;
   border-radius: 20px;
   padding: 12px 1px;
-  margin: 0 auto;
 }
 
 .bold_text {

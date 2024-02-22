@@ -6,26 +6,24 @@ import styles from './Menu.module.css'
 const Menu = () => {
   return (
     <div className={styles.wrapp}>
-      <div className={styles.button_1}>
+      <NavLink className={styles.button_1}>
         <div className={styles.grid}>
-          <p className={styles.bold_text}><NavLink to="/friends">Зови друзей</NavLink></p>
-          <img src={arrow} alt="" />
+          <p className={styles.bold_text}>Зови друзей</p>
+          <img src={arrow} alt="Перейти" />
         </div> 
         <p className={styles.light_text}>Дарим по 500 рублей каждому</p>
-      </div>
-      <NavLink to="/store">
-      <div className={styles.button_3}>
-        <p className={styles.bold_text}>Посмотреть ассортимент товаров</p>
-        <img src={arrow_2} alt="Ошибка отображения картинки" className={styles.arrow_2} />
-      </div>
       </NavLink>
-      <div className={styles.button_2}>
+      <NavLink to="/store"  className={styles.button_3}>
+        <p className={styles.bold_text}>Посмотреть ассортимент товаров</p>
+        <img src={arrow_2} alt="Перейти" className={styles.arrow_2} />
+      </NavLink>
+      <NavLink className={styles.button_2}>
         <div className={styles.grid}>
           <p className={styles.bold_text}>The Mobile Shop</p>
-          <img src={arrow} alt="" />
+          <img src={arrow} alt="Перейти" />
         </div>
         <p className={styles.light_text}>Узнай о нашей компании больше</p>
-      </div>
+      </NavLink>
     </div>
   )
 }

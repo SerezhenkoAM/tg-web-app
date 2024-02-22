@@ -10,4 +10,5 @@
 .App {
   background-attachment: var(--tg-color-scheme);
   color: var(--tg-theme-text-color);
+  min-width: 350px;
 }

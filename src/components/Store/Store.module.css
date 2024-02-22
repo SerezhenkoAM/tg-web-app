@@ -1,9 +1,41 @@
-.wrapp {
+.grid {
   background-color: #F2FBFF;
   display: flex;
-  justify-content: left;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
   padding: 2rem 1rem;
+}
+
+.input {
+  background-color: white;
+  outline: none;
+  padding: .7rem 1rem;
+  width: 50%;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  min-width: 180px;
+  max-width: 400px;
+  color: black;
+}
+::placeholder {
+  color: black;
+}
+
+.wrapp {
+  background-color: #F2FBFF;
+  border-top: 1px solid black;
+}
+
+.img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 2rem;
 }
